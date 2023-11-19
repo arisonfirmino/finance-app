@@ -35,7 +35,7 @@ export default function SignIn() {
       </View>
 
       <View className="flex-row items-center justify-between">
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigate.navigate("SignUp")}>
           <Text className="text-text-color text-base">
             Ainda não tem uma conta?
           </Text>

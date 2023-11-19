@@ -27,7 +27,10 @@ export default function Welcome() {
       </View>
 
       <View className="flex-row justify-between">
-        <TouchableOpacity className="border-bg-color flex h-14 w-40 items-center justify-center rounded-[15px] border border-solid">
+        <TouchableOpacity
+          onPress={() => navigate.navigate("SignUp")}
+          className="border-bg-color flex h-14 w-40 items-center justify-center rounded-[15px] border border-solid"
+        >
           <Text className="text-text-color text-xl">Cadastrar</Text>
         </TouchableOpacity>
 
