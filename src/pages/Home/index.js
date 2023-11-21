@@ -2,6 +2,7 @@ import { View } from "react-native";
 
 import ProfileCard from "../../components/ProfileCard";
 import Balance from "../../components/Balance";
+import AddButtons from "../../components/AddButtons";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <ProfileCard />
 
       <Balance />
+
+      <AddButtons />
     </View>
   );
 }
