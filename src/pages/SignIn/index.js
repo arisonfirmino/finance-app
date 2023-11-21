@@ -8,9 +8,9 @@ export default function SignIn() {
   const navigate = useNavigation();
 
   return (
-    <View className="bg-screen-color flex-1 px-5 py-14">
+    <View className="flex-1 bg-screen-color px-5 py-14">
       <View className="relative flex w-full items-center justify-center">
-        <Text className="text-text-color text-4xl font-medium">Login</Text>
+        <Text className="text-4xl font-medium text-text-color">Login</Text>
 
         <TouchableOpacity
           onPress={() => navigate.navigate("Welcome")}
@@ -21,22 +21,22 @@ export default function SignIn() {
       </View>
 
       <View className="mt-10 w-full flex-1">
-        <Text className="text-text-color text-xl">Email</Text>
+        <Text className="text-xl text-text-color">Email</Text>
         <TextInput
           placeholder="Digite seu email"
-          className="border-bg-color h-14 border-b border-solid text-xl"
+          className="h-14 border-b border-solid border-bg-color text-xl"
         />
 
-        <Text className="text-text-color mt-5 text-xl">Senha</Text>
+        <Text className="mt-5 text-xl text-text-color">Senha</Text>
         <TextInput
           placeholder="Digite sua senha"
-          className="border-bg-color h-14 border-b border-solid text-xl"
+          className="h-14 border-b border-solid border-bg-color text-xl"
         />
       </View>
 
       <View className="flex-row items-center justify-between">
         <TouchableOpacity onPress={() => navigate.navigate("SignUp")}>
-          <Text className="text-text-color text-base">
+          <Text className="text-base text-text-color">
             Ainda não tem uma conta?
           </Text>
         </TouchableOpacity>
@@ -45,7 +45,10 @@ export default function SignIn() {
           colors={["#2fd78a", "#239e6f"]}
           className="rounded-full"
         >
-          <TouchableOpacity className="flex items-center justify-center px-5 py-1">
+          <TouchableOpacity
+            onPress={() => navigate.navigate("Home")}
+            className="flex items-center justify-center px-5 py-1"
+          >
             <Text className="text-lg text-white">Avançar</Text>
           </TouchableOpacity>
         </LinearGradient>

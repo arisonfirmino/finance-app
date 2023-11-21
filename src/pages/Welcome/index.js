@@ -8,7 +8,7 @@ export default function Welcome() {
   const navigate = useNavigation();
 
   return (
-    <View className="bg-screen-color flex-1 px-5 py-14">
+    <View className="flex-1 bg-screen-color px-5 py-14">
       <View className="items-center justify-center">
         <Image
           source={require("../../assets/logo.png")}
@@ -17,11 +17,11 @@ export default function Welcome() {
       </View>
 
       <View className="flex-1 justify-center">
-        <Text className="text-text-color text-6xl">Gerencie</Text>
-        <Text className="text-text-color text-6xl">Suas</Text>
-        <Text className="text-text-color text-6xl">Finanças</Text>
+        <Text className="text-6xl text-text-color">Gerencie</Text>
+        <Text className="text-6xl text-text-color">Suas</Text>
+        <Text className="text-6xl text-text-color">Finanças</Text>
 
-        <Text className="text-text-color mt-2 w-64 text-lg opacity-75">
+        <Text className="mt-2 w-64 text-lg text-text-color opacity-75">
           Acompanhe todo dinheiro entrando e saindo de suas contas.
         </Text>
       </View>
@@ -29,9 +29,9 @@ export default function Welcome() {
       <View className="flex-row justify-between">
         <TouchableOpacity
           onPress={() => navigate.navigate("SignUp")}
-          className="border-bg-color flex h-14 w-40 items-center justify-center rounded-[15px] border border-solid"
+          className="flex h-14 w-40 items-center justify-center rounded-[15px] border border-solid border-bg-color"
         >
-          <Text className="text-text-color text-xl">Cadastrar</Text>
+          <Text className="text-xl text-text-color">Cadastrar</Text>
         </TouchableOpacity>
 
         <LinearGradient

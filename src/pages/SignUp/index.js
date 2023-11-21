@@ -7,9 +7,9 @@ export default function SignUp() {
   const navigate = useNavigation();
 
   return (
-    <View className="bg-screen-color flex-1 px-5 py-14">
+    <View className="flex-1 bg-screen-color px-5 py-14">
       <View className="relative flex w-full items-center justify-center">
-        <Text className="text-text-color text-4xl font-medium">Cadastrar</Text>
+        <Text className="text-4xl font-medium text-text-color">Cadastrar</Text>
 
         <TouchableOpacity
           onPress={() => navigate.navigate("Welcome")}
