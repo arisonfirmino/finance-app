@@ -3,6 +3,7 @@ import { View } from "react-native";
 import ProfileCard from "../../components/ProfileCard";
 import Balance from "../../components/Balance";
 import AddButtons from "../../components/AddButtons";
+import RecentActivity from "../../components/RecentActivity";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <Balance />
 
       <AddButtons />
+
+      <RecentActivity />
     </View>
   );
 }
