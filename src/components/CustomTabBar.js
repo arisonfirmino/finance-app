@@ -4,8 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function CustomTabBar({ state, descriptors, navigation }) {
   return (
-    <View className=" mb-14 items-center justify-center px-5">
-      <View className="w-full flex-row items-center justify-center rounded-[30px] bg-[#b1b1b1] px-5 py-[10px]">
+    <View className="items-center justify-center bg-screen-color px-5">
+      <View className="bg-card-light mb-14 w-full flex-row items-center justify-center rounded-[30px] px-5 py-[10px]">
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];
 

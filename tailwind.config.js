@@ -7,6 +7,7 @@ module.exports = {
         "screen-color": "#e1e1e1",
         "bg-color": "#2fd78a",
         "text-color": "#304c5a",
+        "card-light": "#b1b1b1",
       },
     },
   },
